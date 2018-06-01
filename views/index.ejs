@@ -12,6 +12,10 @@
   </head>
 
   <body>
-    <h1>Hello World!</h1>
+    <% if(user) { %> 
+      <h1>Hello, <%= user.name %></h1>
+    <%  } else { %>
+      <h1>Hello World!</h1>
+    <% } %>
   </body>
 </html>
